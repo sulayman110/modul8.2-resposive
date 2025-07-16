@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple Layaut Design</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+        .box{
+            background-color: blue;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .container2{
+            display: flex;
+            gap: 10px;
+            margin-top: 20px ;
+            flex-wrap: wrap;
+        }
+        .item{
+            background-color: chartreuse;
+            width: 200px;
+            padding: 10px;
+            border-radius: 20px;
+
+        }
+        @media screen and (max-width: 576px) {
+            .container, .container2{
+                flex-direction: column;
+                background-color: blueviolet;
+            }
+        }
+            
+        }
+    </style>
+</head>
+<body>
+    <h2 >simple Layaut Design</h2>
+    <div class="container">
+        <div class="box">
+            <h3>box1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quisquam quos amet tempore corrupti cumque deserunt alias inventore, est aliquam.</p>
+        </div>
+        <div class="box">
+             <h3>box2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quisquam quos amet tempore corrupti cumque deserunt alias inventore, est aliquam.</p>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="item">item -1</div>
+        <div class="item">item -2</div>
+        <div class="item">item -3</div>
+        <div class="item">item -4</div>
+        <div class="item">item -5</div>
+        <div class="item">item -6</div>
+        <div class="item">item -7</div>
+        <div class="item">item -8</div>
+        <div class="item">item -9</div>
+        <div class="item">item -10</div>
+    </div>
+
+</body>
+</html>
